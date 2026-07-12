@@ -55,3 +55,15 @@ body{
     border:none;
 
 }
+#insta{
+    position:fixed;
+    width:70px;
+    height:70px;
+    z-index:9999;
+}
+
+#insta img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
