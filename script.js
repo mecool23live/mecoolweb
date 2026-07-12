@@ -1,28 +1,28 @@
-const insta = document.getElementById("insta");
+const orbit = document.getElementById("orbit");
 
-let x = 100;
-let y = 100;
+let angle = 0;
 
-let dx = 3;
-let dy = 3;
+// Orbit ka radius
+const radius = 220;
 
-function animate() {
+// Speed (0.01 slow, 0.03 medium, 0.05 fast)
+const speed = 0.02;
 
-    x += dx;
-    y += dy;
+function animate(){
 
-    if (x + insta.offsetWidth >= window.innerWidth || x <= 0) {
-        dx = -dx;
-    }
+    angle += speed;
 
-    if (y + insta.offsetHeight >= window.innerHeight || y <= 0) {
-        dy = -dy;
-    }
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
 
-    insta.style.left = x + "px";
-    insta.style.top = y + "px";
+    const x = centerX + radius * Math.cos(angle);
+    const y = centerY + radius * Math.sin(angle);
+
+    orbit.style.left = x + "px";
+    orbit.style.top = y + "px";
 
     requestAnimationFrame(animate);
+
 }
 
 animate();

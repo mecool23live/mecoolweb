@@ -55,15 +55,25 @@ body{
     border:none;
 
 }
-#insta{
+#orbit{
     position:fixed;
-    width:70px;
-    height:70px;
+    width:75px;
+    height:75px;
+    left:50%;
+    top:50%;
+    margin-left:-37px;
+    margin-top:-37px;
     z-index:9999;
 }
 
-#insta img{
+#orbit img{
     width:100%;
     height:100%;
     border-radius:50%;
+    box-shadow:0 0 25px #ff00aa;
+    transition:.3s;
+}
+
+#orbit img:hover{
+    transform:scale(1.2);
 }
