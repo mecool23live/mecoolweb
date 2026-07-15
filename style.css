@@ -7,11 +7,20 @@ body {
 }
 
 .logo {
-    color: #00c8ff;
+    color: #010304;
     font-size: 50px;
     margin: 25px 0;
 }
-
+.creator-name {
+    color: #e97e7e;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-top: -15px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #00c8ff;
+}
 .player-container {
     width: 90%;
     max-width: 1000px;
