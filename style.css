@@ -21,6 +21,17 @@ body {
     text-transform: uppercase;
     text-shadow: 0 0 10px #00c8ff;
 }
+
+.sentence {
+    color: #090101dd;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-top: -15px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #000608;
+}
 .player-container {
     width: 90%;
     max-width: 1000px;
